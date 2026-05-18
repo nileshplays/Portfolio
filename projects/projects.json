@@ -32,7 +32,7 @@
   {
     "name": "Deepfake Detection",
     "desc": "AI/ML-powered deepfake detection web app with image/video analysis, secure uploads, instant results, and responsive UI.",
-    "image": "deepfakehomess",
+    "image": "deepfakeHomess",
     "category": "mern",
     "links": {
       "view": "https://github.com/nileshplays/Deepfake",
