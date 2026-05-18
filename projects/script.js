@@ -20,7 +20,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Jigar Sable";
+            document.title = "Projects | Portfolio Nilesh Sarkar";
             $("#favicon").attr("href", "/assets/images/favicon.png");
         }
         else {
@@ -47,7 +47,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="../assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -83,7 +83,26 @@ function showProjects(projects) {
     // srtop.reveal('.work .box', { interval: 200 });
 
     // isotope filter products
-    var $grid = $('.box-container').isotope({
+    // var $grid = $('.box-container').isotope({
+    //     itemSelector: '.grid-item',
+    //     layoutMode: 'fitRows',
+    //     masonry: {
+    //         columnWidth: 200
+    //     }
+    // });
+
+    var $grid = $('.box-container');
+
+// destroy previous instance if exists
+    $grid.isotope('destroy');
+
+    console.log("Projects:", projects.length);
+    if (!projects.length) {
+        projectsContainer.innerHTML = "<p>No projects found</p>";
+        return;
+    }
+    // reinitialize
+    $grid.isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
         masonry: {
@@ -106,32 +125,32 @@ getProjects().then(data => {
 // fetch projects end
 
 // Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
+// var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+// (function () {
+//     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+//     s1.async = true;
+//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+//     s1.charset = 'UTF-8';
+//     s1.setAttribute('crossorigin', '*');
+//     s0.parentNode.insertBefore(s1, s0);
+// })();
 // End of Tawk.to Live Chat
 
 // disable developer mode
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-}
+// document.onkeydown = function (e) {
+//     if (e.keyCode == 123) {
+//         return false;
+//     }
+//     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+//         return false;
+//     }
+//     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+//         return false;
+//     }
+//     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+//         return false;
+//     }
+//     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+//         return false;
+//     }
+// }
