@@ -10,6 +10,16 @@
     }
   },
   {
+    "name": "AI Video Assistant - RAG",
+    "desc": "AI-powered video/audio intelligence platform for transcription, summarization, structured content generation, and context-aware Q&A using Whisper, LLMs, LangChain, ChromaDB, and RAG.",
+    "image": "RAG_AIVideoAssistant",
+    "category": "langchain",
+    "links": {
+      "view": "https://ai-video-assistant-rag.onrender.com/",
+      "code": "https://github.com/nileshplays/RAG---AI-Video-Assistant"
+    }
+  },
+  {
     "name": "Blogging Community",
     "desc": "Full-stack blogging platform with authentication, rich text editing, media upload, search, sorting, and blog management using MERN Stack.",
     "image": "blogHomess",
@@ -19,6 +29,17 @@
       "code": "https://github.com/nileshplays/Blogging-Community"
     }
   },
+  {
+    "name": "Insurance Premium",
+    "desc": "Built an Insurance Premium Prediction API using FastAPI and Machine Learning to estimate insurance costs based on user attributes, with input validation and error handling.",
+    "image": "insurancePremium",
+    "category": "fastAPI",
+    "links": {
+      "view": "https://insurance-premium-frontend-u4mcha5dog5ynqvkmnvyhs.streamlit.app/",
+      "code": "https://github.com/nileshplays/Insurance-premium-api/blob/main/app.py"
+    }
+  },
+
   {
     "name": "Placement Cell Website",
     "desc": "Full-stack placement portal with, job tracking, student profiles, announcements, and recruiter-student management using MERN Stack.",

@@ -760,6 +760,11 @@ header .navbar ul li a:hover {
 /* work section ends */
 
 /* experience section starts */
+.experience {
+  padding-bottom: 2rem !important;
+  margin-bottom: 0 !important;
+}
+
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -931,9 +936,15 @@ header .navbar ul li a:hover {
 /* experience section ends */
 
 /* contact section starts */
+
+
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
+}
+.contact {
+  margin-top: 0 !important;
+  padding-top: 2rem;
 }
 .contact .container {
   max-width: 1050px;
